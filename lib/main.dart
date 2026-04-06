@@ -1,4 +1,6 @@
+import 'package:chat_scroll_challenge/manager/scroll_view_model.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'gemini_chat_screen.dart';
 
@@ -12,6 +14,7 @@ class ChatScrollChallenge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Chat Scroll Challenge',
       theme: ThemeData.from(
         colorScheme: ColorScheme.fromSeed(
@@ -83,8 +86,11 @@ class _ApiKeyScreenState extends State<ApiKeyScreen> {
                   if (_apiKeyController.text.trim().isEmpty) return;
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => GeminiChatScreen(
-                        geminiApiKey: _apiKeyController.text.trim(),
+                      builder: (context) => ChangeNotifierProvider(
+                        create: (_) => ScrollViewModel(),
+                        child: GeminiChatScreen(
+                          geminiApiKey: _apiKeyController.text.trim(),
+                        ),
                       ),
                     ),
                   );
