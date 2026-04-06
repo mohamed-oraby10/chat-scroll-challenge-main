@@ -30,24 +30,17 @@ Live version of the app is available here:
 
 ## Screen Recordings
 
-All five test scenarios have been recorded and included in the `assets` folder:
+All scenarios have been recorded and included in the `assets` folder:
 
 1. **Scenario 1 (Basic Auto-Scroll)**  
-   [Watch Recording](assets/Scenario 1.mp4)
+   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%201.mp4)
 
 2. **Scenario 2 (Pause on Manual Scroll)**  
-   [Watch Recording](assets/Scenario 2.mp4)
+   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%202.mp4)
 
 3. **Scenario 3 (Send While Scrolled Up)**  
-   [Watch Recording](assets/Scenario 3.mp4)
+   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%203.mp4)
 
 4. **Scenario 4 (Resume Auto-Scroll After Scroll Down)**  
-   [Watch Recording](assets/Scenario 4.mp4)
+   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%204.mp4)
 
-5. **Scenario 5 (Streaming Response Handling)**  
-   [Watch Recording](assets/Scenario 5.mp4)
-
----
-
-> All scenarios have been tested and verified to match the behavior of the reference demo:  
-> [Reference Demo](https://iman-admin.github.io/chat-scroll-demo/)
