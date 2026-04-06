@@ -1,55 +1,46 @@
-# Chat Auto-Scroll Challenge
+# Chat Scroll Challenge
 
-## Setup
+## UX Issues Identified and Fixed
 
-1. Get a free Gemini API key from [ai.google.dev](https://ai.google.dev)
-2. Run `flutter pub get`
-3. Run `flutter run` (web, macOS, or any platform)
-4. Enter your API key and start chatting
+During testing against the reference implementation, the following scroll UX issues were identified and fixed:
 
-## Your Task
+1. **Auto-scroll not consistent**  
+   - Fixed the automatic scrolling when new messages arrive while streaming.
 
-This app has scroll UX issues. Compare it against the reference implementation and fix them.
+2. **Manual scroll pauses ignored**  
+   - Implemented pause of auto-scroll when the user scrolls up manually.
 
-**Reference:** https://iman-admin.github.io/chat-scroll-demo/
+3. **Sending messages while scrolled up**  
+   - Ensured the current scroll position is maintained and auto-scroll resumes only when appropriate.
 
-Test these scenarios in the reference demo before you start coding. Start by sending a message that produces a long response to fill the screen (e.g. _"Write a detailed essay about the history of the internet"_). If the response is too short, send another one.
+4. **Resume auto-scroll after scrolling back down**  
+   - Fixed issue where auto-scroll didn’t resume after user scrolled back to the bottom.
 
-1. Send a message and let the response stream in.
-2. While a response is streaming, scroll up manually.
-3. While scrolled up, send a new message.
-4. While a response is streaming, scroll back down to the bottom.
+5. **Streaming responses breaking scroll behavior**  
+   - Adjusted ScrollController logic to handle streaming messages smoothly.
 
-Your solution will be scored primarily on how closely it matches the reference. You are free to use any AI tools you'd like.
+---
 
-## How to Submit
+## Deployed URL
 
-1. Clone this repo into a **private** repository on your own GitHub account.
-2. Implement your solution.
-3. Deploy your solution to the web.
-4. Update this README with:
-   - The UX issues you identified and fixed.
-   - Your deployed URL.
-   - Include screen recordings for all five scenarios and the deployed URL below.
-5. Add **IMan-admin** as a collaborator to your private repo.
-6. Send us the link to your repo.
+Live version of the app is available here:  
+[https://mohamed-oraby10.github.io/chat-scroll-challenge-main/](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/)
 
+---
 
-### Deployed URL
+## Screen Recordings
 
-[Live Demo](https://your-deployed-url.com)
+All scenarios have been recorded and included in the `assets` folder:
 
-### Screen Recordings
+1. **Scenario 1 (Basic Auto-Scroll)**  
+[Watch Recording](assets/Scenario 1.mp4)
 
-- **Scenario 1 (Basic Auto-Scroll):** [Watch Recording](https://your-recording/scenario1)
-- **Scenario 2 (Pause on Manual Scroll):** [Watch Recording](https://your-hrecording/scenario2)
-- **Scenario 3 (Send While Scrolled Up):** [Watch Recording](https://your-recording/scenario3)
-- **Scenario 4 (Resume Auto-Scroll After Scroll Down):** [Watch Recording](https://your-recording/scenario4)
- 
+2. **Scenario 2 (Pause on Manual Scroll)**  
+[Watch Recording](assets/Scenario 2.mp4)
 
-## Evaluation Criteria
+3. **Scenario 3 (Send While Scrolled Up)**  
+[Watch Recording](assets/Scenario 3.mp4)
 
-- Does each scenario work correctly in isolation?
-- Do all four scenarios work together without regressions?
-- Does the behavior match the reference demo?
-- Is the code clean, testable, and well-separated?
+4. **Scenario 4 (Resume Auto-Scroll After Scroll Down)**  
+[Watch Recording](assets/Scenario 4.mp4)
+
