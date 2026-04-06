@@ -33,14 +33,14 @@ Live version of the app is available here:
 All scenarios have been recorded and included in the `assets` folder:
 
 1. **Scenario 1 (Basic Auto-Scroll)**  
-   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%201.mp4)
+[Watch Recording](assets/Scenario 1.mp4)
 
 2. **Scenario 2 (Pause on Manual Scroll)**  
-   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%202.mp4)
+[Watch Recording](assets/Scenario 2.mp4)
 
 3. **Scenario 3 (Send While Scrolled Up)**  
-   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%203.mp4)
+[Watch Recording](assets/Scenario 3.mp4)
 
 4. **Scenario 4 (Resume Auto-Scroll After Scroll Down)**  
-   [Watch Recording](https://mohamed-oraby10.github.io/chat-scroll-challenge-main/assets/Scenario%204.mp4)
+[Watch Recording](assets/Scenario 4.mp4)
 
